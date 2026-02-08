@@ -46,6 +46,28 @@ The theme organizes your vault's temperature from hot to cold:
 4.  Paste the files inside.
 5.  Select **BlackP3arl** in Obsidian Appearance settings.
 
+## � Design Manifestos
+
+This theme isn't just a skin; it's a modular system built on strict architectural principles. 
+
+The repository includes two foundational documents that serve as the **source of truth** for all design decisions. You can use these files to understand, modify, or extend the BlackP3arl system:
+
+### 1. The Chromatic Codex (`Couleurs.md`)
+This document outlines the **Imperial Hierarchy System**, a 12-level color scale designed to visualize information temperature.
+*   **Usage**: Refer to this file when adding new custom CSS classes or extending the theme to other apps (like VS Code or Terminal).
+*   **Structure**: It defines the exact HSL/Hex values for:
+    *   **The Hot Zone (Action)**: From `Crimson` (Immediate Attention) to `Royal Blue` (Cold Storage).
+    *   **The Cold Zone (Archive)**: A spectrum of purples and lilacs for folder organization.
+    *   **Neon Physics**: The specific glow ratios used to create the signature "levitating text" effect.
+
+### 2. The Typographic Standard (`Polices.md`)
+This file details the **Brutalist Typesetting Engine** that powers BlackP3arl.
+*   **Usage**: Consult this guide if you want to tweak font sizes while maintaining perfect harmonic proportions.
+*   **Core Logic**:
+    *   **Golden Ratio Scaling**: All headings are sized using a strict mathematical progression based on Φ (1.618), ensuring natural visual harmony even at massive sizes.
+    *   **Font Selection**: Explains the strategic pairing of **Anton** (Impact, Warning, Strength) for headers and **Space Mono** (Data, Precision, Code) for interface elements.
+    *   **Kerning & Leading**: Specific tracking values to ensure the brutalist text remains legible.
+
 ## 🤝 Contributing
 Bug reports and pull requests are welcome on [GitHub](https://github.com/ledokter/obsidian-BlackPe4rl-theme). This theme is a living digital artifact.
 
