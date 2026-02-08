@@ -3,7 +3,7 @@
 **BlackP3arl** is a high-contrast, brutalist cyberpunk theme designed for the Obsidian knowledge base. It merges the commanding presence of the **Anton** typeface with a unique hybrid rendering engine that combines hard brutalist shadows with crisp neon halos.
 Unlike standard themes, this classification system avoids arbitrary aesthetic choices. Every font size and color shade is the result of **precise mathematical calculations** (rooted in the Golden Ratio φ) as documented in the attached files:
 
-### 1. The Chromatic Codex (`Couleurs.md`)
+### 1. The Chromatic Codex (`Système de Couleurs Hiérarchique Impérial.md`)
 This document outlines the **Imperial Hierarchy System**, a 12-level color scale designed to visualize information temperature.
 *   **Usage**: Refer to this file when adding new custom CSS classes or extending the theme to other apps (like VS Code or Terminal).
 *   **Structure**: It defines the exact HSL/Hex values for:
@@ -11,7 +11,7 @@ This document outlines the **Imperial Hierarchy System**, a 12-level color scale
     *   **The Cold Zone (Archive)**: A spectrum of purples and lilacs for folder organization.
     *   **Neon Physics**: The specific glow ratios used to create the signature "levitating text" effect.
 
-### 2. The Typographic Standard (`Polices.md`)
+### 2. The Typographic Standard (`FICHE TECHNIQUE DÉVELOPPEUR.md`)
 This file details the **Brutalist Typesetting Engine** that powers BlackP3arl.
 *   **Usage**: Consult this guide if you want to tweak font sizes while maintaining perfect harmonic proportions.
 *   **Core Logic**:
