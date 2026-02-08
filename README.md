@@ -60,7 +60,7 @@ This document outlines the **Imperial Hierarchy System**, a 12-level color scale
     *   **The Cold Zone (Archive)**: A spectrum of purples and lilacs for folder organization.
     *   **Neon Physics**: The specific glow ratios used to create the signature "levitating text" effect.
 
-### 2. The Typographic Standard (`Polices.md`)
+### 2. The Typographic Standard (`FICHE TECHNIQUE DÉVELOPPEUR.md`)
 This file details the **Brutalist Typesetting Engine** that powers BlackP3arl.
 *   **Usage**: Consult this guide if you want to tweak font sizes while maintaining perfect harmonic proportions.
 *   **Core Logic**:
