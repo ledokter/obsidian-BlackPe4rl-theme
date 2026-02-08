@@ -23,6 +23,8 @@ Ce fichier détaille le **Moteur Typographique Brutaliste** qui propulse BlackP3
     *   **Échelle du Nombre d'Or** : Tous les titres sont dimensionnés selon une progression mathématique stricte basée sur Φ (1.618), assurant une harmonie visuelle naturelle même à des tailles massives.
     *   **Sélection de Police** : Explique le choix stratégique d'**Anton** (Impact, Avertissement, Force) pour les en-têtes et **Space Mono** (Données, Précision, Code) pour les éléments d'interface.
     *   **Kerning & Leading** : Valeurs d'espacement spécifiques pour assurer que le texte brutaliste reste lisible.
+ 
+      # REEL SCREENSHOT (MEILLEUR RENDU DES OMBRAGES
 
       ![rendu réel meilleur rendu des ombres que le showcase](https://github.com/ledokter/obsidian-BlackPe4rl-theme/blob/main/real_screenshot.png)
     
