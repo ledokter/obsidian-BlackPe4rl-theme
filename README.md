@@ -4,7 +4,7 @@
 
 ## � Design Manifestos
 
-This theme isn't just a skin; it's a modular system built on strict architectural principles. **Nothing is left to chance.**
+This theme isn't just a skin, it's a modular system built on strict architectural principles. **Nothing is left to chance.**
 
 Unlike standard themes, this classification system avoids arbitrary aesthetic choices. Every font size and color shade is the result of **precise mathematical calculations** (rooted in the Golden Ratio φ) as documented in the attached files:
 
