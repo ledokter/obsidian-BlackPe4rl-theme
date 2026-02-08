@@ -2,7 +2,7 @@
 
 **BlackP3arl** is a high-contrast, brutalist cyberpunk theme designed for the Obsidian knowledge base. It merges the commanding presence of the **Anton** typeface with a unique hybrid rendering engine that combines hard brutalist shadows with crisp neon halos.
 
-![BlackP3arl Theme Showcase](https://github.com/ledokter/obsidian-BlackPe4rl-theme/raw/main/SHOWCASE.png)
+![BlackP3arl Theme Showcase](https://github.com/ledokter/obsidian-BlackPe4rl-theme/raw/main/SHOWCASE.webp)
 
 ## ✨ Core Aesthetics 
 
