@@ -26,6 +26,8 @@ This file details the **Brutalist Typesetting Engine** that powers BlackP3arl.
  
       ![REEL VIEW:](https://github.com/ledokter/obsidian-BlackPe4rl-theme/blob/main/real_screenshot.png)
 
+    # SHOWCASE :
+
 ![BlackP3arl Theme Showcase](https://github.com/ledokter/obsidian-BlackPe4rl-theme/raw/main/SHOWCASE.webp)
 
 ## ✨ Core Aesthetics 
