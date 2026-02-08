@@ -48,7 +48,7 @@ Le thème organise la température de votre coffre du chaud au froid :
 
 ## 📜 Manifestes de Design
 
-Ce thème n'est pas juste une peau ; c'est un système modulaire construit sur des principes architecturaux stricts.
+Ce thème n'est pas juste un skin ; c'est un système modulaire construit sur des principes architecturaux stricts.
 
 Le dépôt inclut deux documents fondateurs qui servent de **source de vérité** pour toutes les décisions de design. Vous pouvez utiliser ces fichiers pour comprendre, modifier ou étendre le système BlackP3arl :
 
