@@ -1,6 +1,11 @@
 # 🏴‍☠️ BlackP3arl Theme for Obsidian
 
 **BlackP3arl** is a high-contrast, brutalist cyberpunk theme designed for the Obsidian knowledge base. It merges the commanding presence of the **Anton** typeface with a unique hybrid rendering engine that combines hard brutalist shadows with crisp neon halos.
+
+## � Design Manifestos
+
+This theme isn't just a skin; it's a modular system built on strict architectural principles. **Nothing is left to chance.**
+
 Unlike standard themes, this classification system avoids arbitrary aesthetic choices. Every font size and color shade is the result of **precise mathematical calculations** (rooted in the Golden Ratio φ) as documented in the attached files:
 
 ### 1. The Chromatic Codex (`Système de Couleurs Hiérarchique Impérial.md`)
@@ -62,11 +67,6 @@ The theme organizes your vault's temperature from hot to cold:
 3.  Create a folder named `BlackP3arl`.
 4.  Paste the files inside.
 5.  Select **BlackP3arl** in Obsidian Appearance settings.
-
-## � Design Manifestos
-
-This theme isn't just a skin; it's a modular system built on strict architectural principles. **Nothing is left to chance.**
-
 
 
 ## 🤝 Contributing
