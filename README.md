@@ -48,9 +48,9 @@ The theme organizes your vault's temperature from hot to cold:
 
 ## � Design Manifestos
 
-This theme isn't just a skin; it's a modular system built on strict architectural principles. 
+This theme isn't just a skin; it's a modular system built on strict architectural principles. **Nothing is left to chance.**
 
-The repository includes two foundational documents that serve as the **source of truth** for all design decisions. You can use these files to understand, modify, or extend the BlackP3arl system:
+Unlike standard themes, this classification system avoids arbitrary aesthetic choices. Every font size and color shade is the result of **precise mathematical calculations** (rooted in the Golden Ratio φ) as documented in the attached files:
 
 ### 1. The Chromatic Codex (`Couleurs.md`)
 This document outlines the **Imperial Hierarchy System**, a 12-level color scale designed to visualize information temperature.
