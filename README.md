@@ -23,6 +23,8 @@ This file details the **Brutalist Typesetting Engine** that powers BlackP3arl.
     *   **Golden Ratio Scaling**: All headings are sized using a strict mathematical progression based on Φ (1.618), ensuring natural visual harmony even at massive sizes.
     *   **Font Selection**: Explains the strategic pairing of **Anton** (Impact, Warning, Strength) for headers and **Space Mono** (Data, Precision, Code) for interface elements.
     *   **Kerning & Leading**: Specific tracking values to ensure the brutalist text remains legible.
+ 
+      ![REEL VIEW:](https://github.com/ledokter/obsidian-BlackPe4rl-theme/blob/main/real_screenshot.png)
 
 ![BlackP3arl Theme Showcase](https://github.com/ledokter/obsidian-BlackPe4rl-theme/raw/main/SHOWCASE.webp)
 
