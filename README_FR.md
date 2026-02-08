@@ -2,7 +2,7 @@
 
 **BlackP3arl** est un thème cyberpunk brutaliste à haut contraste conçu pour Obsidian. Il fusionne la présence imposante de la police **Anton** avec un moteur de rendu hybride unique combinant des ombres brutalistes dures et des halos néon nets.
 
-![Vitrine du Thème BlackP3arl](https://github.com/ledokter/obsidian-BlackPe4rl-theme/raw/main/SHOWCASE.webp)
+![Vitrine du Thème BlackP3arl](https://github.com/ledokter/obsidian-BlackPe4rl-theme/raw/main/screenshot.png)
 
 ## ✨ Esthétique Principale
 
@@ -48,9 +48,9 @@ Le thème organise la température de votre coffre du chaud au froid :
 
 ## 📜 Manifestes de Design
 
-Ce thème n'est pas juste un skin ; c'est un système modulaire construit sur des principes architecturaux stricts.
+Ce thème n'est pas juste un skin ; c'est un système modulaire construit sur des principes architecturaux stricts. **Rien n'est laissé au hasard.**
 
-Le dépôt inclut deux documents fondateurs qui servent de **source de vérité** pour toutes les décisions de design. Vous pouvez utiliser ces fichiers pour comprendre, modifier ou étendre le système BlackP3arl :
+Contrairement aux thèmes classiques, ce système de classification ne repose pas sur des choix esthétiques arbitraires. La taille de chaque titre et la nuance de chaque couleur sont le résultat de **calculs mathématiques précis** (basés notamment sur le Nombre d'Or φ) documentés dans les fichiers joints :
 
 ### 1. Le Codex Chromatique (`Couleurs.md`)
 Ce document décrit le **Système de Hiérarchie Impérial**, une échelle de 12 couleurs conçue pour visualiser la température de l'information.
