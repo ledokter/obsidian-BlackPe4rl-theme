@@ -73,14 +73,6 @@ Le thème organise la température de votre coffre du chaud au froid :
 4.  Collez les fichiers à l'intérieur.
 5.  Sélectionnez **BlackP3arl** dans les paramètres d'Apparence d'Obsidian.
 
-## 📜 Manifestes de Design
-
-Ce thème n'est pas juste un skin ; c'est un système modulaire construit sur des principes architecturaux stricts. **Rien n'est laissé au hasard.**
-
-Contrairement aux thèmes classiques, ce système de classification ne repose pas sur des choix esthétiques arbitraires. La taille de chaque titre et la nuance de chaque couleur sont le résultat de **calculs mathématiques précis** (basés notamment sur le Nombre d'Or φ) documentés dans les fichiers joints :
-
-
-
 ## 🤝 Contribution
 Les rapports de bugs et pull requests sont les bienvenus sur [GitHub](https://github.com/ledokter/obsidian-BlackPe4rl-theme). Ce thème est un artefact numérique vivant.
 
