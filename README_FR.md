@@ -9,7 +9,7 @@ Ce document décrit le **Système de Hiérarchie Impérial**, une échelle de 12
     *   **La Zone Froide (Archive)** : Un spectre de violets et lilas pour l'organisation des dossiers.
     *   **Physique du Néon** : Les ratios de lueur spécifiques utilisés pour créer l'effet signature de "texte en lévitation".
 
-### 2. Le Standard Typographique (`FICHE TECHNIQUE DÉVELOPPEUR.mdd`)
+### 2. Le Standard Typographique (`FICHE TECHNIQUE DÉVELOPPEUR.md`)
 Ce fichier détaille le **Moteur Typographique Brutaliste** qui propulse BlackP3arl.
 *   **Usage** : Consultez ce guide si vous souhaitez ajuster les tailles de police tout en maintenant des proportions harmoniques parfaites.
 *   **Logique Centrale** :
