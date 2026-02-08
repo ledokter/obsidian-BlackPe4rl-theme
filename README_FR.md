@@ -2,7 +2,7 @@
 
 **BlackP3arl** est un thème cyberpunk brutaliste à haut contraste conçu pour Obsidian. Il fusionne la présence imposante de la police **Anton** avec un moteur de rendu hybride unique combinant des ombres brutalistes dures et des halos néon nets.
 
-## 📜 Manifestes de Design
+## 📜 Manifesto du Design
 
 Ce thème n'est pas juste un skin, c'est un système modulaire construit sur des principes architecturaux stricts. **Rien n'est laissé au hasard.**
 
