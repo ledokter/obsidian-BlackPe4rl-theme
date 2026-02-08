@@ -1,0 +1,484 @@
+/* ========================================== */
+/* IMPERIAL HIERARCHY THEME (BlackP3arl)      */
+/* Version: 1.0.0                             */
+/* Author: ledokter                           */
+/* Repo: https://github.com/ledokter/obsidian-BlackPe4rl-theme */
+/* ========================================== */
+
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  /* ========================================== */
+  /* SYSTÈME IMPÉRIAL - VARIABLES GLOBALES    */
+  /* ========================================== */
+
+  /* Typographie Brutaliste (Impact-style) */
+  --font-heading: 'Anton', sans-serif;
+  --font-interface: 'Space Mono', monospace;
+  --font-base-size: 16px;
+
+  /* Échelle Nombre d'Or for Desktop (Base) */
+  --font-h1: 11.089rem;
+  /* ~177px */
+  --font-h2: 6.854rem;
+  /* ~110px */
+  --font-h3: 4.236rem;
+  /* ~68px */
+  --font-h4: 2.618rem;
+  /* ~42px */
+  --font-h5: 1.618rem;
+  /* ~26px */
+  --font-h6: 1rem;
+  /* ~16px */
+  --font-body: 1rem;
+  /* 16px */
+
+  /* Poids police */
+  --weight-h1: 400;
+  /* Anton only has 400, but it is naturally bold */
+  --weight-h2: 400;
+  --weight-h3: 400;
+  --weight-h4: 400;
+  --weight-h5: 400;
+  --weight-h6: 400;
+  --weight-body: 400;
+
+  /* Line-heights */
+  --lh-h1: 1.0;
+  --lh-h2: 1.1;
+  --lh-h3: 1.2;
+  --lh-h4: 1.3;
+  --lh-h5: 1.4;
+  --lh-h6: 1.5;
+  --lh-body: 1.6;
+
+  /* Letter-spacing */
+  --ls-h1: 0.02em;
+  --ls-h2: 0.02em;
+  --ls-h3: 0.02em;
+  --ls-h4: 0.02em;
+  --ls-h5: 0.02em;
+  --ls-h6: 0.02em;
+
+  /* Couleurs Titres (Zone Chaude) */
+  --color-h1: #DC143C;
+  /* Crimson */
+  --color-h2: #FF6347;
+  /* Tomato */
+  --color-h3: #FFA500;
+  /* Orange */
+  --color-h4: #FFD700;
+  /* Gold */
+  --color-h5: #00CED1;
+  /* DarkTurquoise */
+  --color-h6: #4169E1;
+  /* RoyalBlue */
+
+  /* Couleurs Dossiers (Zone Froide) */
+  --color-d1: #4B0082;
+  /* Indigo */
+  --color-d2: #8B00FF;
+  /* Violet */
+  --color-d3: #9932CC;
+  /* DarkOrchid */
+  --color-d4: #BA55D3;
+  /* MediumOrchid */
+  --color-d5: #DA70D6;
+  /* Orchid */
+  --color-d6: #EE82EE;
+  /* Lilac */
+
+  /* Glows (Crisp Neon + Hard Shadow Hybrid) */
+  --glow-h1: 2px 2px 0px #000, 0 0 2px #fff, 0 0 10px var(--color-h1);
+  --glow-h2: 2px 2px 0px #000, 0 0 2px #fff, 0 0 10px var(--color-h2);
+  --glow-h3: 2px 2px 0px #000, 0 0 2px #fff, 0 0 10px var(--color-h3);
+  --glow-h4: 2px 2px 0px #000, 0 0 2px #fff, 0 0 10px var(--color-h4);
+  --glow-h5: 2px 2px 0px #000, 0 0 2px #fff, 0 0 10px var(--color-h5);
+  --glow-h6: 2px 2px 0px #000, 0 0 2px #fff, 0 0 10px var(--color-h6);
+
+  --glow-d1: 1px 1px 0px #000, 0 0 2px var(--color-d1), 0 0 5px var(--color-d1);
+  --glow-d2: 1px 1px 0px #000, 0 0 2px var(--color-d2), 0 0 5px var(--color-d2);
+  --glow-d3: 1px 1px 0px #000, 0 0 2px var(--color-d3), 0 0 5px var(--color-d3);
+  --glow-d4: 1px 1px 0px #000, 0 0 2px var(--color-d4), 0 0 5px var(--color-d4);
+  --glow-d5: 1px 1px 0px #000, 0 0 2px var(--color-d5), 0 0 5px var(--color-d5);
+  --glow-d6: 1px 1px 0px #000, 0 0 2px var(--color-d6), 0 0 5px var(--color-d6);
+
+  /* Backgrounds & UI */
+  --bg-dark: #0d0d0d;
+  --bg-gradient: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+  --background-primary: var(--bg-dark);
+  --background-secondary: #161616;
+  --background-secondary-alt: #1a1a2e;
+
+  /* Texte */
+  --text-base: #e8e8e8;
+  --text-muted: #a0a0a0;
+  --text-normal: var(--text-base);
+  --text-faint: var(--text-muted);
+
+  /* Espacements */
+  --spacing-h1: 2rem 0 1rem;
+  --spacing-h2: 1.75rem 0 0.875rem;
+  --spacing-h3: 1.5rem 0 0.75rem;
+  --spacing-h4: 1.25rem 0 0.625rem;
+  --spacing-h5: 1rem 0 0.5rem;
+  --spacing-h6: 0.875rem 0 0.438rem;
+}
+
+/* ========================================== */
+/* RESPONSIVE BREAKPOINTS (Mobile First override) */
+/* ========================================== */
+@media (max-width: 767px) {
+  :root {
+    --font-h1: 3.5rem;
+    /* ~56px */
+    --font-h2: 2.5rem;
+    /* ~40px */
+    --font-h3: 2rem;
+    /* ~32px */
+    --font-h4: 1.5rem;
+    /* ~24px */
+    --font-h5: 1.25rem;
+    /* ~20px */
+    --font-h6: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  :root {
+    --font-h1: 6rem;
+    /* ~96px */
+    --font-h2: 4rem;
+    /* ~64px */
+    --font-h3: 3rem;
+    /* ~48px */
+    --font-h4: 2rem;
+    /* ~32px */
+    --font-h5: 1.5rem;
+  }
+}
+
+/* ========================================== */
+/* BASE STYLES                               */
+/* ========================================== */
+body {
+  font-family: var(--font-heading);
+  background-color: var(--bg-dark);
+  background-image: var(--bg-gradient);
+  background-attachment: fixed;
+  /* Parallax-like feel */
+  color: var(--text-base);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Obsidian UI Font override */
+.app-container {
+  font-family: var(--font-interface);
+}
+
+/* ========================================== */
+/* HEADERS (Reading & Live Preview)          */
+/* ========================================== */
+
+/* Reading View */
+.markdown-preview-view h1,
+.markdown-rendered h1 {
+  color: var(--color-h1);
+  font-family: var(--font-heading);
+  font-size: var(--font-h1);
+  font-weight: var(--weight-h1);
+  text-shadow: var(--glow-h1);
+  line-height: var(--lh-h1);
+  letter-spacing: var(--ls-h1);
+  margin: var(--spacing-h1);
+  text-transform: uppercase;
+}
+
+.markdown-preview-view h2,
+.markdown-rendered h2 {
+  color: var(--color-h2);
+  font-family: var(--font-heading);
+  font-size: var(--font-h2);
+  font-weight: var(--weight-h2);
+  text-shadow: var(--glow-h2);
+  line-height: var(--lh-h2);
+  letter-spacing: var(--ls-h2);
+  margin: var(--spacing-h2);
+}
+
+.markdown-preview-view h3,
+.markdown-rendered h3 {
+  color: var(--color-h3);
+  font-family: var(--font-heading);
+  font-size: var(--font-h3);
+  font-weight: var(--weight-h3);
+  text-shadow: var(--glow-h3);
+  line-height: var(--lh-h3);
+  letter-spacing: var(--ls-h3);
+  margin: var(--spacing-h3);
+}
+
+.markdown-preview-view h4,
+.markdown-rendered h4 {
+  color: var(--color-h4);
+  font-family: var(--font-heading);
+  font-size: var(--font-h4);
+  font-weight: var(--weight-h4);
+  text-shadow: var(--glow-h4);
+  line-height: var(--lh-h4);
+  letter-spacing: var(--ls-h4);
+  margin: var(--spacing-h4);
+}
+
+.markdown-preview-view h5,
+.markdown-rendered h5 {
+  color: var(--color-h5);
+  font-family: var(--font-heading);
+  font-size: var(--font-h5);
+  font-weight: var(--weight-h5);
+  text-shadow: var(--glow-h5);
+  line-height: var(--lh-h5);
+  letter-spacing: var(--ls-h5);
+  margin: var(--spacing-h5);
+}
+
+.markdown-preview-view h6,
+.markdown-rendered h6 {
+  color: var(--color-h6);
+  font-family: var(--font-heading);
+  font-size: var(--font-h6);
+  font-weight: var(--weight-h6);
+  text-shadow: var(--glow-h6);
+  line-height: var(--lh-h6);
+  letter-spacing: var(--ls-h6);
+  margin: var(--spacing-h6);
+}
+
+/* Ornaments */
+.markdown-preview-view h1::before,
+.markdown-rendered h1::before {
+  content: "◆ ";
+  color: var(--color-h4);
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+  margin-right: 0.3em;
+}
+
+.markdown-preview-view h2::before,
+.markdown-rendered h2::before {
+  content: "◇ ";
+  color: var(--color-h3);
+  opacity: 0.8;
+  margin-right: 0.3em;
+}
+
+/* Live Preview (Editor) */
+.cm-header-1 {
+  color: var(--color-h1) !important;
+  font-family: var(--font-heading);
+  font-weight: var(--weight-h1);
+  font-size: var(--font-h1);
+  text-shadow: var(--glow-h1);
+  text-transform: uppercase;
+}
+
+.cm-header-2 {
+  color: var(--color-h2) !important;
+  font-family: var(--font-heading);
+  font-weight: var(--weight-h2);
+  font-size: var(--font-h2);
+  text-shadow: var(--glow-h2);
+}
+
+.cm-header-3 {
+  color: var(--color-h3) !important;
+  font-family: var(--font-heading);
+  font-weight: var(--weight-h3);
+  font-size: var(--font-h3);
+  text-shadow: var(--glow-h3);
+}
+
+.cm-header-4 {
+  color: var(--color-h4) !important;
+  font-family: var(--font-heading);
+  font-weight: var(--weight-h4);
+  font-size: var(--font-h4);
+  text-shadow: var(--glow-h4);
+}
+
+.cm-header-5 {
+  color: var(--color-h5) !important;
+  font-family: var(--font-heading);
+  font-weight: var(--weight-h5);
+  font-size: var(--font-h5);
+  text-shadow: var(--glow-h5);
+}
+
+.cm-header-6 {
+  color: var(--color-h6) !important;
+  font-family: var(--font-heading);
+  font-weight: var(--weight-h6);
+  font-size: var(--font-h6);
+  text-shadow: var(--glow-h6);
+}
+
+/* ========================================== */
+/* FILE EXPLORER (Dossiers)                  */
+/* ========================================== */
+
+/* Based on folder name prefixes */
+.nav-folder-title[data-path^="01-"],
+.nav-folder-title[data-path*="/01-"] {
+  color: var(--color-d1);
+  font-weight: 700;
+  text-shadow: var(--glow-d1);
+}
+
+.nav-folder-title[data-path^="02-"],
+.nav-folder-title[data-path*="/02-"] {
+  color: var(--color-d2);
+  font-weight: 600;
+  text-shadow: var(--glow-d2);
+}
+
+.nav-folder-title[data-path^="03-"],
+.nav-folder-title[data-path*="/03-"] {
+  color: var(--color-d3);
+  font-weight: 600;
+  text-shadow: var(--glow-d3);
+}
+
+.nav-folder-title[data-path^="04-"],
+.nav-folder-title[data-path*="/04-"] {
+  color: var(--color-d4);
+  font-weight: 500;
+  text-shadow: var(--glow-d4);
+}
+
+.nav-folder-title[data-path^="05-"],
+.nav-folder-title[data-path*="/05-"] {
+  color: var(--color-d5);
+  font-weight: 500;
+  text-shadow: var(--glow-d5);
+}
+
+.nav-folder-title[data-path^="06-"],
+.nav-folder-title[data-path*="/06-"] {
+  color: var(--color-d6);
+  font-weight: 400;
+  text-shadow: var(--glow-d6);
+}
+
+/* Emoji Icons for folders */
+.nav-folder-title[data-path^="01-"] .nav-folder-title-content::before,
+.nav-folder-title[data-path*="/01-"] .nav-folder-title-content::before {
+  content: "🔴 ";
+}
+
+.nav-folder-title[data-path^="02-"] .nav-folder-title-content::before,
+.nav-folder-title[data-path*="/02-"] .nav-folder-title-content::before {
+  content: "🟠 ";
+}
+
+.nav-folder-title[data-path^="03-"] .nav-folder-title-content::before,
+.nav-folder-title[data-path*="/03-"] .nav-folder-title-content::before {
+  content: "🟡 ";
+}
+
+.nav-folder-title[data-path^="04-"] .nav-folder-title-content::before,
+.nav-folder-title[data-path*="/04-"] .nav-folder-title-content::before {
+  content: "🔵 ";
+}
+
+.nav-folder-title[data-path^="05-"] .nav-folder-title-content::before,
+.nav-folder-title[data-path*="/05-"] .nav-folder-title-content::before {
+  content: "🟣 ";
+}
+
+.nav-folder-title[data-path^="06-"] .nav-folder-title-content::before,
+.nav-folder-title[data-path*="/06-"] .nav-folder-title-content::before {
+  content: "⚪ ";
+}
+
+/* Tags */
+.tag[href="#urgent"],
+.cm-tag-urgent {
+  color: var(--color-d1) !important;
+  background: rgba(75, 0, 130, 0.2);
+}
+
+.tag[href="#important"],
+.cm-tag-important {
+  color: var(--color-d2) !important;
+  background: rgba(139, 0, 255, 0.2);
+}
+
+.tag[href="#reference"],
+.cm-tag-reference {
+  color: var(--color-d3) !important;
+  background: rgba(153, 50, 204, 0.2);
+}
+
+.tag[href="#archive"],
+.cm-tag-archive {
+  color: var(--color-d4) !important;
+  background: rgba(186, 85, 211, 0.2);
+}
+
+/* Utility Classes for Badges (can be used in HTML) */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-urgent {
+  background: var(--color-h1);
+  color: white;
+}
+
+.badge-important {
+  background: var(--color-h2);
+  color: white;
+}
+
+.badge-active {
+  background: var(--color-h3);
+  color: black;
+}
+
+.badge-normal {
+  background: var(--color-h4);
+  color: black;
+}
+
+.badge-reference {
+  background: var(--color-d1);
+  color: white;
+}
+
+.badge-archive {
+  background: var(--color-d4);
+  color: white;
+}
+
+/* Mobile Optimization: Remove heavy text-shadows */
+@media (max-width: 767px) {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .cm-header-1,
+  .cm-header-2,
+  .cm-header-3,
+  .nav-folder-title {
+    text-shadow: none !important;
+  }
+}
