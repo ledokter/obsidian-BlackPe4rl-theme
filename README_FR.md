@@ -24,8 +24,9 @@ Ce fichier détaille le **Moteur Typographique Brutaliste** qui propulse BlackP3
     *   **Sélection de Police** : Explique le choix stratégique d'**Anton** (Impact, Avertissement, Force) pour les en-têtes et **Space Mono** (Données, Précision, Code) pour les éléments d'interface.
     *   **Kerning & Leading** : Valeurs d'espacement spécifiques pour assurer que le texte brutaliste reste lisible.
 
-      [rendu réel:](https://github.com/ledokter/obsidian-BlackPe4rl-theme/blob/main/real_screenshot.png)
-
+      ![rendu réel meilleur rendu des ombres que le showcase](https://github.com/ledokter/obsidian-BlackPe4rl-theme/blob/main/real_screenshot.png)
+    
+# SHOWCASE :
 ![Vitrine du Thème BlackP3arl](https://github.com/ledokter/obsidian-BlackPe4rl-theme/raw/main/SHOWCASE.webp)
 
 ## ✨ Esthétique Principale
