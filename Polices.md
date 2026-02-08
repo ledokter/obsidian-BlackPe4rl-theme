@@ -287,7 +287,7 @@ text
 
 ## Contact
 
-**Équipe dev** : [[votre-email@domain.com](mailto:votre-email@domain.com)]  
+**Équipe dev** : (https://github.com/ledokter/obsidian-BlackPe4rl-theme/)
 **Version** : 1.0  
 **Dernière MAJ** : 04 février 2026
 
