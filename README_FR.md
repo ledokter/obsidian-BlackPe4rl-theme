@@ -52,7 +52,7 @@ Ce thème n'est pas juste un skin ; c'est un système modulaire construit sur de
 
 Contrairement aux thèmes classiques, ce système de classification ne repose pas sur des choix esthétiques arbitraires. La taille de chaque titre et la nuance de chaque couleur sont le résultat de **calculs mathématiques précis** (basés notamment sur le Nombre d'Or φ) documentés dans les fichiers joints :
 
-### 1. Le Codex Chromatique (`Couleurs.md`)
+### 1. Le Codex Chromatique (`FICHE TECHNIQUE DÉVELOPPEUR.md`)
 Ce document décrit le **Système de Hiérarchie Impérial**, une échelle de 12 couleurs conçue pour visualiser la température de l'information.
 *   **Usage** : Référez-vous à ce fichier pour ajouter de nouvelles classes CSS personnalisées ou étendre le thème à d'autres applications (comme VS Code ou Terminal).
 *   **Structure** : Il définit les valeurs Hex/HSL exactes pour :
