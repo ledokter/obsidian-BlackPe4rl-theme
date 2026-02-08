@@ -1,7 +1,7 @@
 # 🏴‍☠️ Thème BlackP3arl pour Obsidian
 
 **BlackP3arl** est un thème cyberpunk brutaliste à haut contraste conçu pour Obsidian. Il fusionne la présence imposante de la police **Anton** avec un moteur de rendu hybride unique combinant des ombres brutalistes dures et des halos néon nets.
-### 1. Le Codex Chromatique (`FICHE TECHNIQUE DÉVELOPPEUR.md`)
+### 1. Le Codex Chromatique (`Système de Couleurs Hiérarchique Impérial.md`)
 Ce document décrit le **Système de Hiérarchie Impérial**, une échelle de 12 couleurs conçue pour visualiser la température de l'information.
 *   **Usage** : Référez-vous à ce fichier pour ajouter de nouvelles classes CSS personnalisées ou étendre le thème à d'autres applications (comme VS Code ou Terminal).
 *   **Structure** : Il définit les valeurs Hex/HSL exactes pour :
@@ -9,7 +9,7 @@ Ce document décrit le **Système de Hiérarchie Impérial**, une échelle de 12
     *   **La Zone Froide (Archive)** : Un spectre de violets et lilas pour l'organisation des dossiers.
     *   **Physique du Néon** : Les ratios de lueur spécifiques utilisés pour créer l'effet signature de "texte en lévitation".
 
-### 2. Le Standard Typographique (`Polices.md`)
+### 2. Le Standard Typographique (`FICHE TECHNIQUE DÉVELOPPEUR.mdd`)
 Ce fichier détaille le **Moteur Typographique Brutaliste** qui propulse BlackP3arl.
 *   **Usage** : Consultez ce guide si vous souhaitez ajuster les tailles de police tout en maintenant des proportions harmoniques parfaites.
 *   **Logique Centrale** :
