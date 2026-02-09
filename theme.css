@@ -1,6 +1,6 @@
 /* ========================================== */
 /* IMPERIAL HIERARCHY THEME (BlackP3arl)      */
-/* Version: 1.0.0                             */
+/* Version: 1.1.0 (V2 - Ergonomic Overhaul)   */
 /* Author: ledokter                           */
 /* Repo: https://github.com/ledokter/obsidian-BlackPe4rl-theme */
 /* ========================================== */
@@ -20,23 +20,15 @@
 
   /* Échelle Nombre d'Or for Desktop (Base) */
   --font-h1: 11.089rem;
-  /* ~177px */
   --font-h2: 6.854rem;
-  /* ~110px */
   --font-h3: 4.236rem;
-  /* ~68px */
   --font-h4: 2.618rem;
-  /* ~42px */
   --font-h5: 1.618rem;
-  /* ~26px */
   --font-h6: 1rem;
-  /* ~16px */
   --font-body: 1rem;
-  /* 16px */
 
   /* Poids police */
   --weight-h1: 400;
-  /* Anton only has 400, but it is naturally bold */
   --weight-h2: 400;
   --weight-h3: 400;
   --weight-h4: 400;
@@ -89,20 +81,13 @@
   --color-d6: #EE82EE;
   /* Lilac */
 
-  /* Glows (Crisp Neon + Hard Shadow Hybrid) */
+  /* Glows */
   --glow-h1: 2px 2px 0px #000, 0 0 2px #fff, 0 0 10px var(--color-h1);
   --glow-h2: 2px 2px 0px #000, 0 0 2px #fff, 0 0 10px var(--color-h2);
   --glow-h3: 2px 2px 0px #000, 0 0 2px #fff, 0 0 10px var(--color-h3);
   --glow-h4: 2px 2px 0px #000, 0 0 2px #fff, 0 0 10px var(--color-h4);
   --glow-h5: 2px 2px 0px #000, 0 0 2px #fff, 0 0 10px var(--color-h5);
   --glow-h6: 2px 2px 0px #000, 0 0 2px #fff, 0 0 10px var(--color-h6);
-
-  --glow-d1: 1px 1px 0px #000, 0 0 2px var(--color-d1), 0 0 5px var(--color-d1);
-  --glow-d2: 1px 1px 0px #000, 0 0 2px var(--color-d2), 0 0 5px var(--color-d2);
-  --glow-d3: 1px 1px 0px #000, 0 0 2px var(--color-d3), 0 0 5px var(--color-d3);
-  --glow-d4: 1px 1px 0px #000, 0 0 2px var(--color-d4), 0 0 5px var(--color-d4);
-  --glow-d5: 1px 1px 0px #000, 0 0 2px var(--color-d5), 0 0 5px var(--color-d5);
-  --glow-d6: 1px 1px 0px #000, 0 0 2px var(--color-d6), 0 0 5px var(--color-d6);
 
   /* Backgrounds & UI */
   --bg-dark: #0d0d0d;
@@ -127,39 +112,6 @@
 }
 
 /* ========================================== */
-/* RESPONSIVE BREAKPOINTS (Mobile First override) */
-/* ========================================== */
-@media (max-width: 767px) {
-  :root {
-    --font-h1: 3.5rem;
-    /* ~56px */
-    --font-h2: 2.5rem;
-    /* ~40px */
-    --font-h3: 2rem;
-    /* ~32px */
-    --font-h4: 1.5rem;
-    /* ~24px */
-    --font-h5: 1.25rem;
-    /* ~20px */
-    --font-h6: 1rem;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  :root {
-    --font-h1: 6rem;
-    /* ~96px */
-    --font-h2: 4rem;
-    /* ~64px */
-    --font-h3: 3rem;
-    /* ~48px */
-    --font-h4: 2rem;
-    /* ~32px */
-    --font-h5: 1.5rem;
-  }
-}
-
-/* ========================================== */
 /* BASE STYLES                               */
 /* ========================================== */
 body {
@@ -167,191 +119,196 @@ body {
   background-color: var(--bg-dark);
   background-image: var(--bg-gradient);
   background-attachment: fixed;
-  /* Parallax-like feel */
   color: var(--text-base);
   -webkit-font-smoothing: antialiased;
 }
 
-/* Obsidian UI Font override */
 .app-container {
   font-family: var(--font-interface);
 }
 
 /* ========================================== */
-/* HEADERS (Reading & Live Preview)          */
+/* HEADERS WITH DEPTH MARKERS (V2)           */
 /* ========================================== */
 
-/* Reading View */
-.markdown-preview-view h1,
-.markdown-rendered h1 {
-  color: var(--color-h1);
-  font-family: var(--font-heading);
-  font-size: var(--font-h1);
-  font-weight: var(--weight-h1);
-  text-shadow: var(--glow-h1);
-  line-height: var(--lh-h1);
-  letter-spacing: var(--ls-h1);
-  margin: var(--spacing-h1);
-  text-transform: uppercase;
-}
-
-.markdown-preview-view h2,
-.markdown-rendered h2 {
-  color: var(--color-h2);
-  font-family: var(--font-heading);
-  font-size: var(--font-h2);
-  font-weight: var(--weight-h2);
-  text-shadow: var(--glow-h2);
-  line-height: var(--lh-h2);
-  letter-spacing: var(--ls-h2);
-  margin: var(--spacing-h2);
-}
-
-.markdown-preview-view h3,
-.markdown-rendered h3 {
-  color: var(--color-h3);
-  font-family: var(--font-heading);
-  font-size: var(--font-h3);
-  font-weight: var(--weight-h3);
-  text-shadow: var(--glow-h3);
-  line-height: var(--lh-h3);
-  letter-spacing: var(--ls-h3);
-  margin: var(--spacing-h3);
-}
-
-.markdown-preview-view h4,
-.markdown-rendered h4 {
-  color: var(--color-h4);
-  font-family: var(--font-heading);
-  font-size: var(--font-h4);
-  font-weight: var(--weight-h4);
-  text-shadow: var(--glow-h4);
-  line-height: var(--lh-h4);
-  letter-spacing: var(--ls-h4);
-  margin: var(--spacing-h4);
-}
-
-.markdown-preview-view h5,
-.markdown-rendered h5 {
-  color: var(--color-h5);
-  font-family: var(--font-heading);
-  font-size: var(--font-h5);
-  font-weight: var(--weight-h5);
-  text-shadow: var(--glow-h5);
-  line-height: var(--lh-h5);
-  letter-spacing: var(--ls-h5);
-  margin: var(--spacing-h5);
-}
-
-.markdown-preview-view h6,
-.markdown-rendered h6 {
-  color: var(--color-h6);
-  font-family: var(--font-heading);
-  font-size: var(--font-h6);
-  font-weight: var(--weight-h6);
-  text-shadow: var(--glow-h6);
-  line-height: var(--lh-h6);
-  letter-spacing: var(--ls-h6);
-  margin: var(--spacing-h6);
-}
-
-/* Ornaments */
-.markdown-preview-view h1::before,
-.markdown-rendered h1::before {
-  content: "◆ ";
-  color: var(--color-h4);
-  text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
-  margin-right: 0.3em;
-}
-
-.markdown-preview-view h2::before,
-.markdown-rendered h2::before {
-  content: "◇ ";
-  color: var(--color-h3);
-  opacity: 0.8;
-  margin-right: 0.3em;
-}
-
-/* Live Preview (Editor) */
+/* Common Header Logic */
+.markdown-rendered h1,
 .cm-header-1 {
   color: var(--color-h1) !important;
-  font-family: var(--font-heading);
-  font-weight: var(--weight-h1);
   font-size: var(--font-h1);
   text-shadow: var(--glow-h1);
   text-transform: uppercase;
 }
 
+.markdown-rendered h2,
 .cm-header-2 {
   color: var(--color-h2) !important;
-  font-family: var(--font-heading);
-  font-weight: var(--weight-h2);
   font-size: var(--font-h2);
   text-shadow: var(--glow-h2);
 }
 
+.markdown-rendered h3,
 .cm-header-3 {
   color: var(--color-h3) !important;
-  font-family: var(--font-heading);
-  font-weight: var(--weight-h3);
   font-size: var(--font-h3);
   text-shadow: var(--glow-h3);
 }
 
+.markdown-rendered h4,
 .cm-header-4 {
   color: var(--color-h4) !important;
-  font-family: var(--font-heading);
-  font-weight: var(--weight-h4);
   font-size: var(--font-h4);
   text-shadow: var(--glow-h4);
 }
 
+.markdown-rendered h5,
 .cm-header-5 {
   color: var(--color-h5) !important;
-  font-family: var(--font-heading);
-  font-weight: var(--weight-h5);
   font-size: var(--font-h5);
   text-shadow: var(--glow-h5);
 }
 
+.markdown-rendered h6,
 .cm-header-6 {
   color: var(--color-h6) !important;
-  font-family: var(--font-heading);
-  font-weight: var(--weight-h6);
   font-size: var(--font-h6);
   text-shadow: var(--glow-h6);
 }
 
+/* V2 Ergonomy: Depth Labels (Only visible in Live Preview or when Hovered in Reading) */
+:is(h1, h2, h3, h4, h5, h6)::after,
+:is(.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6)::after {
+  font-family: var(--font-interface);
+  font-size: 10px;
+  font-weight: 400;
+  opacity: 0.3;
+  margin-left: 10px;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  text-shadow: none;
+}
+
+.cm-header-1::after,
+h1:hover::after {
+  content: "[LVL-01]";
+}
+
+.cm-header-2::after,
+h2:hover::after {
+  content: "[LVL-02]";
+}
+
+.cm-header-3::after,
+h3:hover::after {
+  content: "[LVL-03]";
+}
+
+.cm-header-4::after,
+h4:hover::after {
+  content: "[LVL-04]";
+}
+
+.cm-header-5::after,
+h5:hover::after {
+  content: "[LVL-05]";
+}
+
+.cm-header-6::after,
+h6:hover::after {
+  content: "[LVL-06]";
+}
+
 /* ========================================== */
-/* FILE EXPLORER (Color Depth + Tree Lines)   */
+/* HIERARCHICAL BULLETS (V2)                 */
 /* ========================================== */
 
-/* AGGRESSIVE shadow/glow/blur removal for ALL navigation */
+ul>li::marker {
+  color: var(--color-h1);
+  content: "■ ";
+}
+
+ul>li>ul>li::marker {
+  color: var(--color-h2);
+  content: "□ ";
+}
+
+ul>li>ul>li>ul>li::marker {
+  color: var(--color-h3);
+  content: "▷ ";
+}
+
+ul>li>ul>li>ul>li>ul>li::marker {
+  color: var(--color-h4);
+  content: "◇ ";
+}
+
+ul>li>ul>li>ul>li>ul>li>ul>li::marker {
+  color: var(--color-h5);
+  content: "○ ";
+}
+
+ul>li>ul>li>ul>li>ul>li>ul>li>ul>li::marker {
+  color: var(--color-h6);
+  content: "• ";
+}
+
+/* ========================================== */
+/* CYBER-BRUTALIST CALLOUTS (V2)             */
+/* ========================================== */
+
+.callout {
+  border-radius: 0 !important;
+  border: none !important;
+  border-left: 5px solid var(--callout-color) !important;
+  background: rgba(13, 13, 13, 0.8) !important;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 97% 100%, 0% 100%);
+  margin: 1.5em 0;
+}
+
+/* Scanline Effect on Header */
+.callout-title {
+  background: linear-gradient(rgba(255, 255, 255, 0.05) 50%, transparent 50%);
+  background-size: 100% 4px;
+  padding: 10px !important;
+  font-family: var(--font-interface);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ========================================== */
+/* FILE EXPLORER (V2 Focus + Depth)         */
+/* ========================================== */
+
+/* Aggressive shadow removal */
 .workspace-leaf-content *,
 .nav-folder *,
 .nav-file *,
 .tree-item *,
-.nav-folder-title,
-.nav-file-title,
-.nav-folder-title-content,
-.nav-file-title-content,
-.tree-item-inner,
-.tree-item-self,
-.nav-buttons-container *,
-.clickable-icon,
-.view-header *,
 .menu *,
-.sidebar-toggle-button *,
 .workspace-tab-header * {
   text-shadow: none !important;
   -webkit-filter: none !important;
   filter: none !important;
   box-shadow: none !important;
-  -webkit-text-stroke: 0 !important;
 }
 
-/* Alternative approach: Count .nav-folder-children ancestors */
-/* LEVEL 1: Folders with NO .nav-folder-children parent = Root level */
+/* V2 Ergonomy: Dim inactive elements on hover */
+.nav-files-container:hover .tree-item:not(:hover) {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+/* V2 Ergonomy: Highlight active file path */
+.tree-item.is-active>.tree-item-self,
+.tree-item.is-active>.tree-item-inner {
+  background: rgba(255, 255, 255, 0.05);
+  border-right: 2px solid var(--color-h2);
+}
+
+/* Depth Logic (using :not approach for root) */
 .nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-title {
   color: var(--color-h1) !important;
   font-weight: 700 !important;
@@ -361,17 +318,12 @@ body {
   content: "🔴 ";
 }
 
-/* Files in Level 1 */
-.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-file>.nav-file-title {
-  color: var(--color-h1) !important;
-}
-
-/* L1 tree lines */
 .nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children {
   border-color: var(--color-h1) !important;
+  border-left: 2px solid;
 }
 
-/* LEVEL 2: Immediate child of Level 1 */
+/* Level 2 */
 .nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-title {
   color: var(--color-h2) !important;
 }
@@ -380,17 +332,12 @@ body {
   content: "🟠 ";
 }
 
-/* Files in Level 2 */
-.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file>.nav-file-title {
-  color: var(--color-h2) !important;
-}
-
-/* L2 tree lines */
 .nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children {
   border-color: var(--color-h2) !important;
+  border-left: 1px solid;
 }
 
-/* LEVEL 3 */
+/* Level 3 */
 .nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title {
   color: var(--color-h3) !important;
 }
@@ -399,17 +346,12 @@ body {
   content: "🟡 ";
 }
 
-/* Files in Level 3 */
-.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file>.nav-file-title {
-  color: var(--color-h3) !important;
-}
-
-/* L3 tree lines */
 .nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children {
   border-color: var(--color-h3) !important;
+  border-left: 1px solid;
 }
 
-/* LEVEL 4 */
+/* Level 4 */
 .nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title {
   color: var(--color-h4) !important;
 }
@@ -418,17 +360,12 @@ body {
   content: "🔵 ";
 }
 
-/* Files in Level 4 */
-.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file>.nav-file-title {
-  color: var(--color-h4) !important;
-}
-
-/* L4 tree lines */
 .nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children {
   border-color: var(--color-h4) !important;
+  border-left: 1px solid;
 }
 
-/* LEVEL 5 */
+/* Level 5 */
 .nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title {
   color: var(--color-h5) !important;
 }
@@ -437,17 +374,12 @@ body {
   content: "🟣 ";
 }
 
-/* Files in Level 5 */
-.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file>.nav-file-title {
-  color: var(--color-h5) !important;
-}
-
-/* L5 tree lines */
 .nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children {
   border-color: var(--color-h5) !important;
+  border-left: 1px solid;
 }
 
-/* LEVEL 6+ */
+/* Level 6+ */
 .nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title {
   color: var(--color-h6) !important;
 }
@@ -456,98 +388,63 @@ body {
   content: "⚪ ";
 }
 
-/* Files in Level 6+ */
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children {
+  border-color: var(--color-h6) !important;
+  border-left: 1px solid;
+}
+
+/* Files Inheritance */
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-file>.nav-file-title {
+  color: var(--color-h1) !important;
+}
+
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file>.nav-file-title {
+  color: var(--color-h2) !important;
+}
+
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file>.nav-file-title {
+  color: var(--color-h3) !important;
+}
+
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file>.nav-file-title {
+  color: var(--color-h4) !important;
+}
+
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file>.nav-file-title {
+  color: var(--color-h5) !important;
+}
+
 .nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file>.nav-file-title {
   color: var(--color-h6) !important;
 }
 
-/* L6 tree lines */
-.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children {
-  border-color: var(--color-h6) !important;
-}
-
-
+/* ========================================== */
+/* MISC UI                                   */
+/* ========================================== */
 
 /* Tags */
-.tag[href="#urgent"],
-.cm-tag-urgent {
-  color: var(--color-d1) !important;
-  background: rgba(75, 0, 130, 0.2);
+.tag {
+  color: var(--color-h4) !important;
+  background: rgba(255, 215, 0, 0.1);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 0;
+  padding: 2px 8px;
+  font-family: var(--font-interface);
 }
 
-.tag[href="#important"],
-.cm-tag-important {
-  color: var(--color-d2) !important;
-  background: rgba(139, 0, 255, 0.2);
-}
-
-.tag[href="#reference"],
-.cm-tag-reference {
-  color: var(--color-d3) !important;
-  background: rgba(153, 50, 204, 0.2);
-}
-
-.tag[href="#archive"],
-.cm-tag-archive {
-  color: var(--color-d4) !important;
-  background: rgba(186, 85, 211, 0.2);
-}
-
-/* Utility Classes for Badges (can be used in HTML) */
-.badge {
-  display: inline-block;
-  padding: 0.25rem 0.75rem;
-  border-radius: 1rem;
-  font-size: 0.875rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.badge-urgent {
-  background: var(--color-h1);
-  color: white;
-}
-
-.badge-important {
-  background: var(--color-h2);
-  color: white;
-}
-
-.badge-active {
-  background: var(--color-h3);
-  color: black;
-}
-
-.badge-normal {
+.tag:hover {
   background: var(--color-h4);
-  color: black;
-}
-
-.badge-reference {
-  background: var(--color-d1);
-  color: white;
-}
-
-.badge-archive {
-  background: var(--color-d4);
-  color: white;
+  color: black !important;
 }
 
 /* Mobile Optimization */
 @media (max-width: 767px) {
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  .cm-header-1,
-  .cm-header-2,
-  .cm-header-3,
-  .nav-folder-title,
-  .nav-file-title {
-    text-shadow: none !important;
+  :root {
+    --font-h1: 3.5rem;
+    --font-h2: 2.5rem;
+    --font-h3: 2rem;
+    --font-h4: 1.5rem;
+    --font-h5: 1.25rem;
+    --font-h6: 1rem;
   }
 }
