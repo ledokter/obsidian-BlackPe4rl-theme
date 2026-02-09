@@ -62,8 +62,8 @@
   --ls-h6: 0.02em;
 
   /* Couleurs Titres (Zone Chaude) */
-  --color-h1: #DC143C;
-  /* Crimson */
+  --color-h1: #FF8C94;
+  /* Congo Pink */
   --color-h2: #FF6347;
   /* Tomato */
   --color-h3: #FFA500;
@@ -323,74 +323,150 @@ body {
 }
 
 /* ========================================== */
-/* FILE EXPLORER (Depth System - No Glow)     */
+/* FILE EXPLORER (Color Depth + Tree Lines)   */
 /* ========================================== */
 
+/* AGGRESSIVE shadow/glow/blur removal for ALL navigation */
+.workspace-leaf-content *,
+.nav-folder *,
+.nav-file *,
+.tree-item *,
 .nav-folder-title,
-.nav-file-title {
+.nav-file-title,
+.nav-folder-title-content,
+.nav-file-title-content,
+.tree-item-inner,
+.tree-item-self,
+.nav-buttons-container *,
+.clickable-icon,
+.view-header *,
+.menu *,
+.sidebar-toggle-button *,
+.workspace-tab-header * {
   text-shadow: none !important;
+  -webkit-filter: none !important;
+  filter: none !important;
+  box-shadow: none !important;
+  -webkit-text-stroke: 0 !important;
 }
 
-/* --- LEVEL 1 (Root & Direct Children of Root) --- */
-.nav-files-container>.nav-folder>.nav-folder-title,
-.nav-files-container>.nav-file>.nav-file-title,
-.nav-files-container>.nav-folder>.nav-folder-children>.nav-file>.nav-file-title {
+/* Alternative approach: Count .nav-folder-children ancestors */
+/* LEVEL 1: Folders with NO .nav-folder-children parent = Root level */
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-title {
   color: var(--color-h1) !important;
+  font-weight: 700 !important;
 }
 
-.nav-files-container>.nav-folder>.nav-folder-title::before {
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-title::before {
   content: "🔴 ";
 }
 
-/* --- LEVEL 2 (Sub-folders & Files in Level 1 folders) --- */
-.nav-folder-children>.nav-folder>.nav-folder-title,
-.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file>.nav-file-title {
+/* Files in Level 1 */
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-file>.nav-file-title {
+  color: var(--color-h1) !important;
+}
+
+/* L1 tree lines */
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children {
+  border-color: var(--color-h1) !important;
+}
+
+/* LEVEL 2: Immediate child of Level 1 */
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-title {
   color: var(--color-h2) !important;
 }
 
-.nav-folder-children>.nav-folder>.nav-folder-title::before {
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-title::before {
   content: "🟠 ";
 }
 
-/* --- LEVEL 3 --- */
-.nav-folder-children .nav-folder-children>.nav-folder>.nav-folder-title,
-.nav-folder-children .nav-folder-children>.nav-folder>.nav-folder-children>.nav-file>.nav-file-title {
+/* Files in Level 2 */
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file>.nav-file-title {
+  color: var(--color-h2) !important;
+}
+
+/* L2 tree lines */
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children {
+  border-color: var(--color-h2) !important;
+}
+
+/* LEVEL 3 */
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title {
   color: var(--color-h3) !important;
 }
 
-.nav-folder-children .nav-folder-children>.nav-folder>.nav-folder-title::before {
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title::before {
   content: "🟡 ";
 }
 
-/* --- LEVEL 4 --- */
-.nav-folder-children .nav-folder-children .nav-folder-children>.nav-folder>.nav-folder-title,
-.nav-folder-children .nav-folder-children .nav-folder-children>.nav-folder>.nav-folder-children>.nav-file>.nav-file-title {
+/* Files in Level 3 */
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file>.nav-file-title {
+  color: var(--color-h3) !important;
+}
+
+/* L3 tree lines */
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children {
+  border-color: var(--color-h3) !important;
+}
+
+/* LEVEL 4 */
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title {
   color: var(--color-h4) !important;
 }
 
-.nav-folder-children .nav-folder-children .nav-folder-children>.nav-folder>.nav-folder-title::before {
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title::before {
   content: "🔵 ";
 }
 
-/* --- LEVEL 5 --- */
-.nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children>.nav-folder>.nav-folder-title,
-.nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children>.nav-folder>.nav-folder-children>.nav-file>.nav-file-title {
+/* Files in Level 4 */
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file>.nav-file-title {
+  color: var(--color-h4) !important;
+}
+
+/* L4 tree lines */
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children {
+  border-color: var(--color-h4) !important;
+}
+
+/* LEVEL 5 */
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title {
   color: var(--color-h5) !important;
 }
 
-.nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children>.nav-folder>.nav-folder-title::before {
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title::before {
   content: "🟣 ";
 }
 
-/* --- LEVEL 6+ --- */
-.nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children>.nav-folder>.nav-folder-title,
-.nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children>.nav-folder>.nav-folder-children>.nav-file>.nav-file-title {
+/* Files in Level 5 */
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file>.nav-file-title {
+  color: var(--color-h5) !important;
+}
+
+/* L5 tree lines */
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children {
+  border-color: var(--color-h5) !important;
+}
+
+/* LEVEL 6+ */
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title {
   color: var(--color-h6) !important;
 }
 
-.nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children>.nav-folder>.nav-folder-title::before {
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title::before {
   content: "⚪ ";
 }
+
+/* Files in Level 6+ */
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file>.nav-file-title {
+  color: var(--color-h6) !important;
+}
+
+/* L6 tree lines */
+.nav-folder:not(.nav-folder-children .nav-folder)>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children {
+  border-color: var(--color-h6) !important;
+}
+
+
 
 /* Tags */
 .tag[href="#urgent"],
