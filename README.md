@@ -26,9 +26,7 @@ Ce fichier détaille le **Moteur Typographique Brutaliste** qui propulse BlackP3
  
       # REEL SCREENSHOT (MEILLEUR RENDU DES OMBRAGES
 
-      ![rendu réel meilleur rendu des ombres que le showcase](https://github.com/ledokter/obsidian-BlackPe4rl-theme/blob/main/real_screenshot.png)
-    
-# SHOWCASE :
+    # SHOWCASE :
 ![Vitrine du Thème BlackP3arl](https://github.com/ledokter/obsidian-BlackPe4rl-theme/raw/main/SHOWCASE.webp)
 
 ## ✨ Esthétique Principale
